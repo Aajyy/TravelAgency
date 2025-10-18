@@ -738,7 +738,7 @@ a {
 }
 
 .mb-100 {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 @media (max-width: 991px) {
   .mb-100 {
@@ -10452,7 +10452,7 @@ header.style-3.two .main-menu > ul > li.active > a i {
   background-image: url(../img/home1/home1-testimonial-bg.png), linear-gradient(180deg, #F2F2FF 0%, #F2F2FF 100%);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 @media (max-width: 1199px) {
   .home1-testimonial-section {
@@ -10461,7 +10461,7 @@ header.style-3.two .main-menu > ul > li.active > a i {
 }
 @media (max-width: 767px) {
   .home1-testimonial-section {
-    padding: 70px 0;
+    padding: 30px 0;
   }
 }
 .home1-testimonial-section .testimonial-card {
@@ -11534,7 +11534,8 @@ header.style-3.two .main-menu > ul > li.active > a i {
   }
 }
 .footer-section .footer-menu-wrap {
-  padding: 90px 0 100px;
+ 
+  padding: 18px 0 12px;
 }
 @media (max-width: 1199px) {
   .footer-section .footer-menu-wrap {
@@ -11752,8 +11753,8 @@ header.style-3.two .main-menu > ul > li.active > a i {
   list-style: none;
 }
 .footer-section .footer-menu-wrap .footer-widget .widget-list li {
-  margin-bottom: 25px;
-  line-height: 1;
+  margin-bottom: 3px !important;
+  
 }
 .footer-section .footer-menu-wrap .footer-widget .widget-list li:last-child {
   margin-bottom: 0;
@@ -20206,7 +20207,7 @@ header.style-3.two .main-menu > ul > li.active > a i {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 100px 0;
+  padding: 16px 0;
 }
 @media (max-width: 1199px) {
   .home6-about-section {
@@ -20215,7 +20216,7 @@ header.style-3.two .main-menu > ul > li.active > a i {
 }
 @media (max-width: 767px) {
   .home6-about-section {
-    padding: 70px 0;
+    padding: 18px 0;
   }
 }
 .home6-about-section .section-title {
@@ -35700,6 +35701,12 @@ header.style-3.two .main-menu > ul > li.active > a i {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+.html.ec-mb.mb-100 {
+        margin-bottom: 30px;
+}
+.html.ec-mb.home6-about-section {
+        padding: 34px 0;
+    }
 @keyframes waves {
   0% {
     transform: translate(-50%, -50%) scale(0.2);
@@ -35749,3 +35756,5 @@ header.style-3.two .main-menu > ul > li.active > a i {
   line-height: 1;
   margin-left: 2px;
 }/*# sourceMappingURL=style.css.map */
+
+
