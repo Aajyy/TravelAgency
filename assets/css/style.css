@@ -148,6 +148,8 @@ Version: 1.0
   --primary-color4: #1B2072;
   --primary-color4-opc: 27, 32, 114;
   --borders-color: #E8E8E8;
+  --primary-color5: #28B6E9;
+  --primary-color6: #FA9A0A;
 }
 
 /*================================================
@@ -4334,7 +4336,7 @@ header.style-2 {
   width: 100%;
   z-index: 999;
   transition: all 0.8s ease-out 0s;
-  background-color: transparent;
+  background-color: var(--primary-color6);
   padding: 0 70px;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
@@ -4356,7 +4358,7 @@ header.style-2.sticky {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--white-color);
+  background-color: var(--primary-color6);
   box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
   z-index: 999;
 }
@@ -4779,7 +4781,7 @@ header.style-2 .main-menu > ul > li.position-inherit {
   }
 }
 header.style-2 .main-menu > ul > li > a {
-  color: var(--title-color);
+  color: var(--white-color);
   display: block;
   letter-spacing: 0.4px;
   padding: 34px 18px;
@@ -4814,7 +4816,7 @@ header.style-2 .main-menu > ul > li > a {
 }
 header.style-2 .main-menu > ul > li > a i {
   font-size: 12px;
-  color: var(--text-color);
+  color: var(--white-color);
   transition: all 0.55s ease-in-out;
 }
 header.style-2 .main-menu > ul > li .dropdown-icon {
@@ -5147,16 +5149,16 @@ header.style-2 .main-menu > ul > li.menu-item-has-children {
   }
 }
 header.style-2 .main-menu > ul > li:hover > a {
-  color: var(--primary-color1);
+  color: rgba(var(--black-color-opc), 0.6);
 }
 header.style-2 .main-menu > ul > li:hover > a i {
-  color: var(--primary-color1);
+  color: rgba(var(--black-color-opc), 0.6);
 }
 header.style-2 .main-menu > ul > li:hover .dropdown-icon2 {
   color: var(--primary-color1);
 }
 header.style-2 .main-menu > ul > li.active > a {
-  color: var(--primary-color1);
+  color: var(--black-color);
 }
 header.style-2 .main-menu > ul > li.active > a i {
   color: var(--primary-color1);
@@ -20203,7 +20205,8 @@ header.style-3.two .main-menu > ul > li.active > a i {
   56. Home6 About Section CSS
 ========================================*/
 .home6-about-section {
-  background-image: url(../img/home6/home6-about-bg.png), linear-gradient(180deg, #F2F2FF 0%, #F2F2FF 100%);
+  /* background-image: url(../img/home6/home6-about-bg.png), linear-gradient(180deg, #F2F2FF 0%, #F2F2FF 100%); */
+  background-color: var(--primary-color5);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -20246,7 +20249,7 @@ header.style-3.two .main-menu > ul > li.active > a i {
   }
 }
 .home6-about-section .divider {
-  fill: #DFDFFE;
+  fill: rgba(var(--black-color-opc), 0.6);
   width: 100%;
 }
 @media (max-width: 991px) {
