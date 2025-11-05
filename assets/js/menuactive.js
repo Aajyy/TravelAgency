@@ -1,6 +1,6 @@
-$(function () {
-  SetNavBarActive();
-});
+// $(function () {
+//   SetNavBarActive();
+// });
 
 function SetNavBarActive() {
   var pageName = document.location.pathname;

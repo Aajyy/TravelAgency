@@ -1,36 +1,36 @@
 (function ($) {
   ("use strict");
 
-  $(".sidebar-button").on("click", function () {
-    $(this).toggleClass("active");
-  });
+  // $(".sidebar-button").on("click", function () {
+  //   $(this).toggleClass("active");
+  // });
 
-  const sidebarButton = document.querySelector(".sidebar-button");
+  // const sidebarButton = document.querySelector(".sidebar-button");
 
-  if (sidebarButton) {
-    sidebarButton.addEventListener("click", () => {
-      document.querySelector(".main-menu").classList.toggle("show-menu");
-    });
-  }
+  // if (sidebarButton) {
+  //   sidebarButton.addEventListener("click", () => {
+  //     document.querySelector(".main-menu").classList.toggle("show-menu");
+  //   });
+  // }
 
-  $(".menu-close-btn").on("click", function () {
-    $(".main-menu").removeClass("show-menu");
-  });
+  // $(".menu-close-btn").on("click", function () {
+  //   $(".main-menu").removeClass("show-menu");
+  // });
 
-  // sidebar
-  $(".right-sidebar-button").on("click", function () {
-    $(".right-sidebar-menu").addClass("show-right-menu");
-  });
-  $(".right-sidebar-close-btn").on("click", function () {
-    $(".right-sidebar-menu").removeClass("show-right-menu");
-  });
+  // // sidebar
+  // $(".right-sidebar-button").on("click", function () {
+  //   $(".right-sidebar-menu").addClass("show-right-menu");
+  // });
+  // $(".right-sidebar-close-btn").on("click", function () {
+  //   $(".right-sidebar-menu").removeClass("show-right-menu");
+  // });
 
-  $(".menu-btn").on("click", function () {
-    $(".sidebar-menu").addClass("active");
-  });
-  $(".sidebar-menu-close").on("click", function () {
-    $(".sidebar-menu").removeClass("active");
-  });
+  // $(".menu-btn").on("click", function () {
+  //   $(".sidebar-menu").addClass("active");
+  // });
+  // $(".sidebar-menu-close").on("click", function () {
+  //   $(".sidebar-menu").removeClass("active");
+  // });
 
   jQuery(".dropdown-icon").on("click", function () {
     jQuery(this).toggleClass("active").next("ul, .mega-menu").slideToggle();
@@ -1600,7 +1600,6 @@
       e.preventDefault();
       $("#tour-booking-calendar").removeClass("active");
     });
-    
 
     // Tour details
     $(".booking-modal .selected-date").html(
@@ -1612,7 +1611,11 @@
       $("#tour-booking-calendar").toggleClass("active");
     });
     $(document).click(function (e) {
-      if (!$(e.target).closest("#tour-booking-calendar, .date-field, .custom-select-dropdown, .selected-date").length) {
+      if (
+        !$(e.target).closest(
+          "#tour-booking-calendar, .date-field, .custom-select-dropdown, .selected-date"
+        ).length
+      ) {
         $("#tour-booking-calendar").removeClass("active");
       }
     });
