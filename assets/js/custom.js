@@ -32,16 +32,16 @@
   //   $(".sidebar-menu").removeClass("active");
   // });
 
-  jQuery(".dropdown-icon").on("click", function () {
-    jQuery(this).toggleClass("active").next("ul, .mega-menu").slideToggle();
-    jQuery(this).parent().siblings().children("ul, .mega-menu").slideUp();
-    jQuery(this).parent().siblings().children(".active").removeClass("active");
-  });
-  jQuery(".dropdown-icon2").on("click", function () {
-    jQuery(this).toggleClass("active").next(".submenu-list").slideToggle();
-    jQuery(this).parent().siblings().children(".submenu-list").slideUp();
-    jQuery(this).parent().siblings().children(".active").removeClass("active");
-  });
+  // jQuery(".dropdown-icon").on("click", function () {
+  //   jQuery(this).toggleClass("active").next("ul, .mega-menu").slideToggle();
+  //   jQuery(this).parent().siblings().children("ul, .mega-menu").slideUp();
+  //   jQuery(this).parent().siblings().children(".active").removeClass("active");
+  // });
+  // jQuery(".dropdown-icon2").on("click", function () {
+  //   jQuery(this).toggleClass("active").next(".submenu-list").slideToggle();
+  //   jQuery(this).parent().siblings().children(".submenu-list").slideUp();
+  //   jQuery(this).parent().siblings().children(".active").removeClass("active");
+  // });
 
   // FancyBox Js
   $('[data-fancybox="gallery-01"]').fancybox({
