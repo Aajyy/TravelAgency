@@ -443,10 +443,12 @@ p {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+  text-align: justify;
 }
 @media (max-width: 576px) {
   p {
     font-size: 16px;
+    text-align: justify;
   }
 }
 
